@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Canvas</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="200" height="100" style="border: 1px solid black;"></canvas>
+
+	<script type="text/javascript">
+		//to create a rectangle
+		// var canvas = document.getElementById('myCanvas');
+		// var ctx = canvas.getContext("2d");
+		// ctx.fillStyle="#FF0000";
+		// ctx.fillRect(15,15,150,75);
+
+
+
+		//to create a line
+		 // var canvas = document.getElementById('myCanvas');
+		 // var ctx = canvas.getContext("2d");
+		 // ctx.moveTo(0,0);
+		 // ctx.lineTo(100,100);
+		 // ctx.stroke();
+
+		 //to create a circle
+		  // var canvas = document.getElementById('myCanvas');
+		  // var ctx = canvas.getContext("2d");
+		  // ctx.beginPath();
+		  // ctx.arc(95,50,40,0,2*Math.PI);
+		  // ctx.stroke();
+
+		  //to crreate a linear gradient
+		   // var canvas = document.getElementById('myCanvas');
+		   // var ctx = canvas.getContext("2d");
+
+		   //to create linear gradient
+		   // var grd= ctx.createLinearGradient(0,0,200,0);
+		   // grd.addColorStop(0,"red");
+		   // grd.addColorStop(1,"yellow");
+
+		   // //fill with gradient
+		   // ctx.fillStyle = grd;
+		   // ctx.fillRect(10,10,150,80)
+
+		   //  //to crreate a linear gradient
+		   // var canvas = document.getElementById('myCanvas');
+		   // var ctx = canvas.getContext("2d");
+
+		   // //to create linear gradient
+		   // var grd= ctx.createLinearGradient(75,50,5,90,60,100);
+		   // grd.addColorStop(0,"red");
+		   // grd.addColorStop(1,"yellow");
+
+		   // //fill with gradient
+		   // ctx.fillStyle = grd;
+		   // ctx.fillRect(10,10,150,80);
+
+		   // writing content in canvas
+           var canvas = document.getElementById('myCanvas');
+		   var ctx = canvas.getContext("2d");
+		   ctx.font="20px Arial";
+		   ctx.fillText("HELLO WORLD" ,10,50)
+	       ctx.strokeText("HELLO WORLD" ,10,50)
+
+
+
+	</script>
+</body>
+</html>

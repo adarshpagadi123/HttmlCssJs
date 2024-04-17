@@ -1,0 +1,43 @@
+/* universal styling*/
+/* *{
+	font-family: monospace;
+	color: red;
+}*/
+
+/* Descandant selector*/
+/**body p{
+	color: pink;
+}*/
+
+/*Child selector*/
+
+/*body>p{
+	color :red;
+}*/
+
+/*id selector*/
+/*#abc{
+	color: yellow;
+}*/
+/* selector*/
+/*#abc{
+	color: yellow;
+}
+.para{
+	color: red;
+	background-color:yellow;
+	font-size: 30px; 
+}*/
+
+
+/*attribute selector*/
+input[type="text"]{
+	color: magenta;
+	text-transform: uppercase;
+	background-color: yellow;
+}
+
+/*#abc,.para{
+	color: magenta;
+	background-color: yellow;
+}*/
