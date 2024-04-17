@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>transition</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			color: darkblue;
+			font-size: 20px;
+			animation-name: timing;
+			position: relative;
+			animation-duration: 4s;
+
+
+		}
+		
+		.div1{
+			animation-timing-function:  linear;
+		}
+		.div2{
+			animation-timing-function: ease;
+		}
+		.div3{
+			animation-timing-function:ease-in;
+		}
+		.div4{
+			animation-timing-function: ease-out;
+		}
+		.div5{
+			animation-timing-function: ease-in-out;
+
+		}
+		@keyframes timing{
+			from{left: 0px}
+			to{left: 350px}
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">linear</div><br>
+	<div class="div2">ease</div><br>
+	<div class="div3">ease-in</div><br>
+	<div class="div4">ease-out</div><br>
+	<div class="div5">ease-in-out</div>
+
+</body>
+</html>

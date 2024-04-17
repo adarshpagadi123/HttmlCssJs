@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>label flow</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("Entering the loop")
+		outerloop: //this is the label
+		for(var i=0;i<5;i++){
+			document.write("outerloop:" +i + "<br>");
+			innerLoop:
+			for(var j=0;j<5;j++)
+			{
+				if(j>3) break; //quit the innerloop
+				if(i==2) break innerLoop;
+				if(i==4)break outerloop;
+				document.write("innerloop: " +j + "<br>")
+			} 
+		}
+		document.write("exiting the loop!")
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+	background: linear-gradient(to right, rgba(200,35,150,0.6),rgba(100,79,200,0.1));
+}
+
+.card{
+	width: 24%;
+	float: left;
+	margin: 5px;
+	height: 100%;
+}
+
+.card-img-top{
+	height: 200px;
+}

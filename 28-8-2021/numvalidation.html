@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>numvalidation</title>
+</head>
+<body>
+<form name="myform" onsubmit="return validate()">
+	Number:<input type="text" name="num" maxlength="10"><br>
+	<div id="msg" style="color:red;"></div>
+</form>
+<script type="text/javascript">
+	function validate() {
+		var num = document.myform.num.value;
+		if(isNaN(num)){
+			document.getElementById('msg').innerText="Enter the valid numeric only"
+			return false;
+		}else{
+			return true;
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Add Event listener</title>
+</head>
+<body>
+	<button id="btn">try it</button>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		
+		var x= document.getElementById('btn');
+		x.addEventListener("mouseover",overFun);
+		x.addEventListener("mouseout",outFun);
+		x.addEventListener("click",clickFun);
+
+
+		function overFun(){
+			document.getElementById('demo').innerText  ="mouse Overed! :)"
+		}
+		function outFun(){
+			document.getElementById('demo').innerText  ="mouse Out! :)"
+		}
+		function clickFun(){
+			document.getElementById('demo').innerText  ="mouse Clicked :)"
+		}
+	</script>
+
+</body>
+</html>
